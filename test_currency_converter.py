@@ -7,3 +7,6 @@ def test_one_to_one():
 
 def test_conversion_simple():
     assert cc.convert(rates, 1, "USD", "EUR") == "0.74 EUR"
+
+def test_conversion():
+    assert cc.convert(rates, 0.5, "USD", "EUR") == "0.37 EUR"
